@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(assets/images/mountains.png) center;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 1px solid white;
+}
+
+.vertical-line {
+  border-left: 0.1px solid white;
+  height: 50px;
+  left: 50%;
+}
+
+.txt-container {
+	border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.filler-div {
+	height: 100px;
+	width: 100px;
+}
