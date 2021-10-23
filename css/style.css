@@ -15,7 +15,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   height: 100%;
 }
 
@@ -32,14 +32,14 @@ html {
 
 .vertical-line {
   border-left: 0.1px solid white;
-  height: 50px;
+  height: 10vh;
   left: 50%;
 }
 
 .txt-container {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
-  height: 25%;
+  height: 25vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -53,4 +53,37 @@ html {
 
 h1 {
   font-size: 8vh !important;
+}
+
+.top-diamond {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  height: 43px;
+  width: 133px;
+}
+
+.menu-container {
+  display: flex;
+}
+
+footer {
+  position: absolute;
+  bottom: 10vh;
+}
+
+.intro-btn {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.contact-btn {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
