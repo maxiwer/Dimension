@@ -1,10 +1,14 @@
+:root {
+  --main-bg-color: #130b41;
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: black url("../assets/images/beach.jpg") no-repeat;
+  background: var(--main-bg-color) url("../assets/images/beach.jpg") no-repeat;
   background-position: center center;
-  color: black;
+  color: var(--main-bg-color);
 }
 
 body,
@@ -28,19 +32,19 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
-  border: 1px solid black;
+  color: var(--main-bg-color);
+  border: 1px solid var(--main-bg-color);
 }
 
 .vertical-line {
-  border-left: 0.1px solid black;
+  border-left: 0.1px solid var(--main-bg-color);
   height: 10vh;
   left: 50%;
 }
 
 .txt-container {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid var(--main-bg-color);
+  border-bottom: 1px solid var(--main-bg-color);
   height: 25vh;
   display: flex;
   flex-direction: column;
@@ -65,8 +69,8 @@ h1 {
 
 button {
   background: transparent;
-  color: black;
-  border: 1px solid black;
+  color: var(--main-bg-color);
+  border: 1px solid var(--main-bg-color);
   height: 43px;
   width: 133px;
 }
