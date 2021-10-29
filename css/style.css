@@ -67,12 +67,15 @@ h1 {
   align-items: center;
 }
 
-button {
-  background: transparent;
-  color: var(--main-bg-color);
+.made-button {
+  height: 4vh;
+  width: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
   border: 1px solid var(--main-bg-color);
-  height: 43px;
-  width: 133px;
+  color: var(--main-bg-color);
 }
 
 .menu-container {
@@ -81,7 +84,7 @@ button {
 
 footer {
   position: absolute;
-  bottom: 10vh;
+  bottom: 4vh;
 }
 
 .intro-btn {
