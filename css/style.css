@@ -78,6 +78,10 @@ h1 {
   color: var(--main-bg-color);
 }
 
+.made-button:hover {
+  cursor: pointer;
+}
+
 .menu-container {
   display: flex;
 }
