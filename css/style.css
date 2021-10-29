@@ -68,8 +68,8 @@ h1 {
 }
 
 .made-button {
-  height: 4vh;
   width: 5vw;
+  height: 4vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,4 +103,47 @@ footer {
 
 button:hover {
   cursor: pointer;
+}
+
+.menu-header-img {
+  width: 100px;
+  height: 100px;
+}
+
+a {
+  text-decoration: none;
+  padding: 1vw 6vh !important;
+  color: var(--main-bg-color);
+}
+
+/* popup styling */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup .close:hover {
+  color: violet;
 }
