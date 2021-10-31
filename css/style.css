@@ -2,6 +2,23 @@
   --main-bg-color: #130b41;
 }
 
+@font-face {
+  font-family: Montserrat-Light;
+  src: url("../assets/fonts/Montserrat-Light.ttf");
+  font-family: Montserrat-Thin;
+  src: url("../assets/fonts/Montserrat-Thin.ttf");
+}
+
+h1,
+h3,
+p {
+  font-family: Montserrat-Light, sans-serif !important;
+}
+
+span, .popup-title, .popup-text, .popup-text p {
+  font-family: Montserrat-Thin, sans-serif !important;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -106,13 +123,13 @@ button:hover {
 }
 
 .menu-header-img {
-  width: 100px;
-  height: 100px;
+  width: 10rem;
+  height: 9rem;
 }
 
 a {
   text-decoration: none;
-  padding: 1vw 6vh !important;
+  padding: 1vw 6vh;
   color: var(--main-bg-color);
 }
 
@@ -135,15 +152,46 @@ a {
 }
 
 .popup {
-  margin: 70px auto;
+  margin: 30vh auto;
   padding: 20px;
-  background: #fff;
+  background: rgba(27, 31, 34, 0.85);
+  color: white;
   border-radius: 5px;
   width: 30%;
   position: relative;
   transition: all 5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .popup .close:hover {
   color: violet;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  color: white;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.popup-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.popup-title {
+  font-size: 1.5em;
 }
